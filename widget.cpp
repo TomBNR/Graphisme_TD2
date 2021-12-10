@@ -35,7 +35,7 @@ void Widget::on_pushButtonAnimation_clicked()
     ui->graphicsView4->fitInView(maScene.sceneRect(),Qt::KeepAspectRatio);
     ui->graphicsView4->setScene(&maScene);
     connect(&timer,&QTimer::timeout,&maScene,&QGraphicsScene::advance);
-    timer.start(70);
+    timer.start(30);
 
 
 }
